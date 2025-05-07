@@ -1,0 +1,61 @@
+
+body {
+     font-family: sans-serif; 
+     display: flex; 
+     flex-direction: column; /* Organiza os itens em coluna (um abaixo do outro) */
+     align-items: center; /* Centraliza os itens horizontalmente */
+     background: gray;
+     
+    }
+.bah{
+    
+        width: 100%;
+        height: 100%;
+
+        background-image: url('sprints/macaco.jpg');
+        background-size: contain; /* Para ajustar a imagem dentro do elemento */
+        background-repeat: no-repeat;
+        border: 1px solid black; /* Apenas para visualizar o elemento */
+}
+
+h1 {
+    color: blueviolet;
+    background: #ffffff;
+    text-align: center;
+    width: 50%; /* Define a largura */
+    height: 50%; /* Define a altura  */
+
+    margin-bottom: 20px; /* Adiciona um espaço abaixo do título */
+    border: 5px solid black;
+}
+
+#tabuleiro {
+        border-collapse: collapse; /* Faz com que as bordas da tabela se juntem em uma só */
+}
+
+#tabuleiro td {
+        width: 80px; /* Define a largura */
+        height: 80px; /* Define a altura  */
+        border: 2px solid #ccc; /* Adiciona uma borda */
+        text-align: center; /* deixa no centro */
+        vertical-align: middle; /* Centraliza o texto verticalmente dentro da célula */
+        font-size: 2em; /* Define o tamanho da fonte dentro da célula (para o símbolo da carta) */
+        background-color: #eee; /* Define uma cor de fundo cinza clara para a carta virada para baixo */
+        padding: 40px;
+    }
+
+#mensagem {
+        margin-top: 20px; /* Adiciona um espaço em cima do negocio */
+    
+    }
+    footer{
+        width: 100%;
+        margin: 20px 20px 20px 20px;
+        background-color: black;
+    }
+    footer h3{
+        color: white;
+        text-align: center;
+
+
+    }
