@@ -2,8 +2,22 @@ html, body {
     height: 100%; /* Garante que o html e o body ocupem toda a altura da janela do navegador. */
 
     margin: 0; /* Remove as margens padrão do body para evitar espaços em branco indesejados. */
-
-   }
+ }
+ header {
+    background-color: black; /* Cor de fundo do header (pode ser alterada) */
+    color: white; /* Cor do texto no header (pode ser alterada) */
+    padding: 1em 0; /* Espaçamento interno superior e inferior */
+    text-align: center; /* Centraliza o texto no header */
+    width: 100%; /* Garante que o header ocupe toda a largura da tela */
+    position: fixed; /* Fixa o header no topo da tela mesmo durante a rolagem */
+    top: 0; /* Alinha o header ao topo da tela */
+    z-index: 100; /* Garante que o header fique acima de outros elementos */
+ }
+ header h1 {
+    margin: 0;
+    color : white; /* Define a cor do texto para branco */
+ }
+ 
   
    body {
     font-family: sans-serif; /* Define a fonte padrão para uma sans-serif, que é geralmente mais limpa e legível na web. */
@@ -23,23 +37,16 @@ html, body {
     background-attachment: fixed; /* Mantém a imagem de fundo fixa enquanto o usuário rola a página, criando um efeito interessante. */
    }
   
-   h1 {
-    color: blueviolet; /* Define a cor do texto do cabeçalho como violeta azulado. */
-    background: #ffffff; /* Define a cor de fundo do cabeçalho como branco. */
-    text-align: center; /* Centraliza o texto dentro do cabeçalho. */
-    width: 50%; /* Define a largura do cabeçalho para 50% da largura do seu elemento pai (o body). */
-    padding: 10px; /* Adiciona um espaçamento interno de 10 pixels ao redor do texto do cabeçalho. */
-    margin-top: 15px; /* Adiciona uma margem superior de 15 pixels ao cabeçalho, separando-o de elementos acima. */
-    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels ao cabeçalho, separando-o de elementos abaixo. */
-    border: 2px solid black; /* Adiciona uma borda preta de 2 pixels de espessura ao redor do cabeçalho. */
-   }
+   
   
    #tabuleiro {
+    margin: 3px;
     border-collapse: collapse; /* Colapsa as bordas das células da tabela em uma única borda, evitando bordas duplas. */
     margin-top: 20px; /* Adiciona uma margem superior de 20 pixels à tabela, separando-a de elementos acima. */
    }
   
    #tabuleiro td {
+    margin: 3px;
     width: 80px; /* Define a largura de cada célula da tabela para 80 pixels. */
     height: 80px; /* Define a altura de cada célula da tabela para 80 pixels, criando células quadradas. */
     border: 2px solid #ccc; /* Adiciona uma borda cinza clara de 2 pixels de espessura ao redor de cada célula da tabela. */
@@ -48,6 +55,7 @@ html, body {
     font-size: 2em; /* Define o tamanho da fonte dentro de cada célula para 2 vezes o tamanho da fonte padrão. */
     background-color: #eee; /* Define a cor de fundo de cada célula da tabela como um cinza claro. */
     padding: 40px; /* Adiciona um espaçamento interno de 40 pixels ao redor do conteúdo de cada célula, tornando-as visualmente maiores. */
+   
    }
   
    #mensagem {
