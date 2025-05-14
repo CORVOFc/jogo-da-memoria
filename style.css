@@ -54,7 +54,7 @@ html, body {
     vertical-align: middle; /* Centraliza o conteúdo verticalmente dentro de cada célula da tabela. */
     font-size: 2em; /* Define o tamanho da fonte dentro de cada célula para 2 vezes o tamanho da fonte padrão. */
     background-color: #eee; /* Define a cor de fundo de cada célula da tabela como um cinza claro. */
-    padding: 40px; /* Adiciona um espaçamento interno de 40 pixels ao redor do conteúdo de cada célula, tornando-as visualmente maiores. */
+    padding: 15px; /* Adiciona um espaçamento interno de 40 pixels ao redor do conteúdo de cada célula, tornando-as visualmente maiores. */
    
    }
   
@@ -76,3 +76,7 @@ html, body {
     text-align: center; /* Centraliza o texto do h3 dentro do rodapé. */
     margin: 0; /* Remove as margens padrão do h3 para que fique mais próximo das bordas do footer, se desejado. */
    }
+img{
+
+   width: 55px;
+}
